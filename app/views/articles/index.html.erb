@@ -1,0 +1,11 @@
+<div class="container">
+  <h1>All articles</h1>
+  <div class="card" style="width:400px">
+    <% @articles.each do |article| %>
+    <div class="card-body">
+      <h2 class="card-title"><%= article.title %></h2>
+      <p class="card-tex"><%= article.content %></p>
+    </div>
+    <% end %>
+  </div>
+<div>
